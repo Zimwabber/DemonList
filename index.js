@@ -37,7 +37,6 @@ const Series = {
 var list = [
     new Level("Kowloon", 2025, Status.Unfinished, Difficulty.Impossible),
     new Level("Gooferhouse unnerfed", 2024, Status.Unverified, Difficulty.Impossible, Series.Goofy),
-    new Level("COOLHAIR NEVER CLEAR", 2026, Status.Unfinished, Difficulty.Impossible, Series.Collab),
     new Level("silent Gay clubstep", 2017, Status.Unverified, Difficulty.Impossible, Series.Goofy),
     new Level("99999", 2024, Status.Unverified, Difficulty.Impossible),
     new Level("HEART FROM YOUR HATE", 2025, Status.Unverified, Difficulty.DemonExtreme),
@@ -109,9 +108,9 @@ class Victor {
 
 var victors = [
     new Victor("Bald Machine", "Nicec00lkidd"),
-    new Victor("Bald Machine", "c00lie"),
+    new Victor("Bald Machine", "zsarah"),
     new Victor("Goofy Grief Layout", "Nicec00lkidd"),
-    new Victor("Goofy Grief Layout", "c00lie"),
+    new Victor("Goofy Grief Layout", "zsarah"),
     new Victor("Deranged on Track", "Nicec00lkidd"),
     new Victor("iCircles", "Nicec00lkidd"),
     new Victor("relatable full ver", "Nicec00lkidd"),
@@ -137,7 +136,7 @@ var victors = [
     new Victor("HERSENSDOOD", "Nicec00lkidd"),
     new Victor("Crispy Gauntlet", "Nicec00lkidd"),
     new Victor("Crispy Gauntlet", "jinxduhh"),
-    new Victor("Crispy Gauntlet", "c00lie"),
+    new Victor("Crispy Gauntlet", "zsarah"),
     new Victor("Crispy Gauntlet", "BlackR3v"),
     new Victor("Crispy Gauntlet", "somisilly"),
     new Victor("Crispy Gauntlet", "Cuzsie"),
