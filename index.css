@@ -1,0 +1,306 @@
+body {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+h5 {
+    color: gray;
+    font-weight: 400;
+}
+
+/* Top bar */
+
+#topbar {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 48px;
+
+    background-color: white;
+    border: 1px solid lightgray;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* List stuff */
+
+#list {
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    top: 40px;
+    width: 728px;
+    padding: 20px;
+}
+
+.level {
+    width: 688px;
+    height: 116px;
+
+    padding: 20px;
+    margin: 30px 10px;
+
+    background-color: white;
+    border: 1px dashed lightgray;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+}
+
+.level:hover {
+    cursor: pointer;
+    animation: levelHover 0.1s ease forwards;
+}
+
+@keyframes levelHover {
+    from { 
+        transform: scale(100%, 100%);
+        filter: brightness(100%);
+    }
+    to { 
+        transform: scale(102%, 102%);
+        filter: brightness(90%);
+    }
+}
+
+.level-picture {
+    position: relative;
+    height: 100%;
+    max-width: 30%;
+    min-width: 30%;
+
+    background-color: black;
+    background-size: 100% 100%;
+}
+
+.level-info {
+    position: relative;
+    height: 100%;
+    max-width: 70%;
+    min-width: 70%;
+    padding-left: 16px;
+}
+
+.level-info-name {
+    max-height: 60%;
+    min-height: 60%;
+
+    display: flex;
+    gap: 8px;
+
+    line-height: 1;
+    align-items: flex-end;
+}
+
+.level-info-group {
+    max-height: 40%;
+    min-height: 40%;
+
+    display: flex;
+    gap: 6px;
+
+    line-height: 1;
+}
+
+.level-info-group-section {
+    height: 24px;
+
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    gap: 3px;
+
+    font-weight: 600;
+}
+
+.level-info-group-section::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-size: 100% 100%;
+    display: inline-block;
+}
+
+/* Level status */
+
+.status-unverified::before {
+        background-image: url("assets/status-unverified.png");
+}
+
+.status-verified::before {
+        background-image: url("assets/status-verified.png");
+}
+
+.status-unfinished::before {
+        background-image: url("assets/status-unfinished.png");
+}
+
+/* Level difficulty */
+
+.difficulty-easy::before {
+        background-image: url("assets/difficulty-easy.png");
+}
+
+.difficulty-normal::before {
+        background-image: url("assets/difficulty-normal.png");
+}
+
+.difficulty-hard::before {
+        background-image: url("assets/difficulty-hard.png");
+}
+
+.difficulty-harder::before {
+        background-image: url("assets/difficulty-harder.png");
+}
+
+.difficulty-insane::before {
+        background-image: url("assets/difficulty-insane.png");
+}
+
+.difficulty-demon-easy::before {
+        background-image: url("assets/difficulty-demon-easy.png");
+}
+
+.difficulty-demon-medium::before {
+        background-image: url("assets/difficulty-demon-medium.png");
+}
+
+.difficulty-demon-hard::before {
+        background-image: url("assets/difficulty-demon-hard.png");
+}
+
+.difficulty-demon-insane::before {
+        background-image: url("assets/difficulty-demon-insane.png");
+}
+
+.difficulty-demon-extreme::before {
+        background-image: url("assets/difficulty-demon-extreme.png");
+}
+
+.difficulty-impossible::before {
+        background-image: url("assets/difficulty-impossible.png");
+}
+
+/* Level series */
+
+.series-goofy::before {
+        background-image: url("assets/series-goofy.png");
+}
+
+.series-misery::before {
+        background-image: url("assets/series-misery.png");
+}
+
+.series-collab::before {
+        background-image: url("assets/series-collab.png");
+}
+
+/* Info overlay */
+
+#info {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    z-index: 2;
+}
+
+#info-box {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 780px;
+    padding: 50px;
+    z-index: 3;
+
+    background-color: white;
+    border: 1px solid lightgray;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#info-exit {
+    position: absolute;
+    transform: translate(-80%, -20%);
+    left: 100%;
+    top: 0%;
+    width: 32px;
+    height: 32px;
+    
+    background-color: lightgray;
+    border: 1px solid gray;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+
+    color: gray;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#info-exit:hover {
+    cursor: pointer;
+    animation: exitHover 0.1s ease forwards;
+}
+
+@keyframes exitHover {
+    from {
+        filter: brightness(100%);
+    }
+    to {
+        filter: brightness(90%);
+    }
+}
+
+#info-image {
+    position: relative;
+    transform: translate(-50%);
+    left: 50%;
+
+    width: 640px;
+    height: 360px;
+
+    background-color: black;
+    background-size: 100% 100%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#info-name {
+    width: 100%;
+    text-align: center;
+}
+
+#info-group {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    line-height: 1;
+}
+
+#info-victor-header {
+    width: 100%;
+    text-align: center;
+}
+
+#info-victor-sub {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+#info-victor-table {
+    visibility: "hidden";
+    background-color: lightgray;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 1px;
+    width: 100%;
+}
+
+#info-victor-table td {
+    background-color: white;
+    border: 2px solid white;
+    font-weight: 600;
+}
